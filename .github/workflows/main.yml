@@ -12,16 +12,8 @@ jobs:
         uses: logseq/rdf-export@main
         with:
           rdfFile: test-export.ttl
-
-      - name: commit files
-        run: |
-          git config --local user.email "thomas.francart@sparna.fr"
-          git config --local user.name "Thomas Francart"
-          git add test-export.ttl
-          git commit -m "test-export.ttl" -a --allow-empty
           
-      - name: push changes
-        uses: ad-m/github-push-action@master
+      - uses: actions/upload-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+          name: RDF export
+          path: test-export.ttl
