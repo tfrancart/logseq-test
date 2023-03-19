@@ -10,4 +10,5 @@ jobs:
 
       - name: Export graph as RDF
         uses: logseq/rdf-export@main
-  
+        with:
+          rdfFile: test-export.ttl
