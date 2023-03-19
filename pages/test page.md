@@ -3,4 +3,6 @@
 - And again.
 - And again !
 - [[draws/2023-03-19-17-33-53.excalidraw]]
+- qdq
+- ![cidoc_crm_version_6.2.1.pdf](../assets/cidoc_crm_version_6.2.1_1679243732409_0.pdf)
 -
