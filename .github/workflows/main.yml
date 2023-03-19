@@ -15,8 +15,8 @@ jobs:
 
       - name: commit files
         run: |
-          git config --local user.email "logseq-rdf-export@sparna.fr"
-          git config --local user.name "LogSeq RDF export"
+          git config --local user.email "thomas.francart@sparna.fr"
+          git config --local user.name "Thomas Francart"
           git add test-export.ttl
           git commit -m "test-export.ttl" -a --allow-empty
           
