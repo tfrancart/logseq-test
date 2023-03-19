@@ -12,3 +12,14 @@ jobs:
         uses: logseq/rdf-export@main
         with:
           rdfFile: test-export.ttl
+
+      - name: commit files
+        run: |
+          git add test-export.ttl
+          git commit -m "test-export.ttl" -a --allow-empty
+          
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
